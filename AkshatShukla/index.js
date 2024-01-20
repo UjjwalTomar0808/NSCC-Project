@@ -21,7 +21,7 @@ window.onload = () => {
         modal.showModal();
     });
 
-    modal.addEventListener("click", e => {
+    document.getElementById("closeContactModal").addEventListener("click", e => {
         modal.close()
     });
 
