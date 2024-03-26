@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: solid 1px rgb(181, 180, 180);
+      border-right: solid 1px rgb(181, 180, 180);
+      box-shadow: 3px 4px rgb(235, 232, 232);
+    }
+    .buttons {
+      background-color: rgb(235, 232, 232);
+      border-color: white;
+      margin: 3px;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    @media screen and (max-width: 720px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px rgb(181, 180, 180);
+        align-items: center;
+        box-shadow: 3px 4px 4px 4px rgb(235, 232, 232);
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .buttons {
+        background-color: white;
+        border: transparent;
+        color: rgb(73, 72, 72);
+        margin: 20px;
+      }
+      .buttons:hover {
+        color: blue;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <button class="buttons">Home</button>
+      </div>
+      <div>
+        <button class="buttons">About</button>
+      </div>
+      <div>
+        <button class="buttons">Services</button>
+      </div>
+      <div>
+        <button class="buttons">Contact</button>
+      </div>
+      <div>
+        <button class="buttons">Feedback</button>
+      </div>
+    </div>
+  </body>
+</html>
